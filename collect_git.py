@@ -23,7 +23,8 @@ def git(repo: Path, *args: str) -> str:
 def main():
     repos = sorted(p for p in HOME.iterdir() if (p / ".git").is_dir())
     today = datetime.now().strftime("%Y-%m-%d")
-    lines = [f"# 주간 git 활동 {today}", "", f"수집 범위: 최근 7일, 리포 {len(repos)}개 스캔.", ""]
+    lines = [f"# 주간 git 활동 {today}", "", "#buildlog", "",
+             f"수집 범위: 최근 7일, 리포 {len(repos)}개 스캔.", ""]
     active = 0
     for repo in repos:
         log = git(repo, "log", f"--since={SINCE}", "--date=short",

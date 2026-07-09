@@ -1,0 +1,4 @@
+#!/bin/sh
+# 비밀정보 검문소 — 스테이징된 내용에 키/토큰이 있으면 커밋을 중단한다.
+# 무인 에이전트(claude -p)가 커밋할 때도 동일하게 적용된다.
+exec python3 "$(git rev-parse --show-toplevel)/gate_secrets.py"
