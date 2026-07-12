@@ -1,3 +1,7 @@
 weekly_buildlog.log
 weekly_buildlog.err.log
 __pycache__/
+
+# 무인 실행 래퍼 — 공개 리포에 올리지 않는다.
+# 빌드로그 태스크가 `git add -A`를 하므로 여기서 막지 않으면 자동으로 커밋된다.
+run_weekly_buildlog.sh
