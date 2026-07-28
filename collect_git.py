@@ -9,7 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 HOME = Path.home()
-VAULT = HOME / "Library/Mobile Documents/com~apple~CloudDocs/Obsidian/Investing"
+VAULT = HOME / "Library/Mobile Documents/com~apple~CloudDocs/Obsidian/SecondBrain"
 INPUT_DIR = VAULT / "빌드로그" / "Inputs"
 SINCE = "7 days ago"
 
